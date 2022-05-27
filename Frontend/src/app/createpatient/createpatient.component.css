@@ -1,0 +1,17 @@
+.bg{
+    background-image: url(../../assets/img/slide/slide-2.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+.container{
+    height: auto;
+    background-color: #79DAE8;
+}
+.btn-custome{
+    margin: 20px;
+}
+.textBold{
+    font-weight: bold;
+}

@@ -1,0 +1,49 @@
+<div class="bg">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="h3 fw-bold text-dark my-4 header">Create Doctor 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+        <form>
+          <div class="row align-items-center">
+          <div class="col mt-4">
+            <label for="" class="textBold">Name</label>
+            <input name="name" class="form-control" [(ngModel)]="doctor.name" name="name" [value]="doctor.name" required="true" type="text" class="form-control" placeholder="Doctor name">
+          </div>
+          </div>
+          <div class="row">
+          <div class="col">
+            <label for="" class="textBold">Specialization</label>
+            <input name="field" class="form-control" [(ngModel)]="doctor.field" name="field" [value]="doctor.field" required="true" type="text" class="form-control" placeholder="Enter Field">
+          </div>
+        </div>
+          <div class="row">
+          <div class="col">
+            <label for="" class="textBold">Age</label>
+            <input name="age" class="form-control" [(ngModel)]="doctor.age" name="age" [value]="doctor.age" required="true" type="number" class="form-control" placeholder="Enter age">
+          </div>
+        </div>
+          <div class="row">
+          <div class="col">
+            <label for="gender" class="textBold">Choose Gender</label>
+            <select id="gender" class="form-control" [(ngModel)]="doctor.gender" [value]="doctor.gender" class="form-control" name="gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="others">Others</option>
+            </select>
+          </div>
+        </div>
+          <div class="row">
+          <div class="col">
+            <button type="submit" (click)="saveDoctor()" class="btn btn-primary btn-custome">Create</button>
+            <a routerLink="/" class="btn btn-danger ms-2">Close</a>
+          </div>
+        </div>
+        </form>
+  </div>
+</div>
+<!-- <pre>{{doctor | json}}</pre> -->
